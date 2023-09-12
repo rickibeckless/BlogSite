@@ -19,6 +19,20 @@
     position: fixed;
 }
 
+.top-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.title a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+}
+
+.top-container a:hover {
+    color: red;
+}
+
 .middle-container {
     padding: 60px 0 20px 0;
 }
