@@ -5,7 +5,7 @@
 }
 
 .top-container {
-    border-bottom: 2px solid black;
+    border-bottom: 5px solid rgb(160 191 207);
 
     display: flex;
     align-items: center;
@@ -14,7 +14,8 @@
     width: 100%;
     height: 60px;
 
-    background-color: white;
+    background-color: rgb(193 216 230);
+    /* background-color: rgb(160 191 207); */
 
     position: fixed;
 }
@@ -25,8 +26,17 @@
 }
 
 .title a {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 4px;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 12px;
+    font-size: 3rem;
+}
+
+.title {
+    margin-left: 2%;
+}
+
+.header-links {
+    margin-right: 2%;
 }
 
 .top-container a:hover {

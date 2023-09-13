@@ -1,6 +1,8 @@
-.blog-cards {
-    border: 2px solid blue;
+.middle-container {
+    background: radial-gradient(circle, rgba(236,214,223,1) 0%, rgba(185,216,231,1) 100%);
+}
 
+.blog-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -9,7 +11,10 @@
 }
 
 .card {
-    border: 1px dashed red;
+    border: 2px inset #4c5b5847;
+    box-shadow: 14px 14px 12px 0px rgb(85, 97, 83);
+    background-color: #dbfff985;
+    border-radius: 20px;
 
     padding: 10px;
 
@@ -19,7 +24,13 @@
     align-items: center;
     /* width: 100%;
     height: 100%; */
-    overflow: hidden;
+
+    transition: 1s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 2;
 }
 
 .card-img {
@@ -27,20 +38,53 @@
     height: 280px;
     overflow: hidden;
     max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 8px 8px 12px 0px rgb(85, 97, 83);
+
+    transition: 1s;
+}
+
+.card-img:hover {
+    transform: scale(1.2);
+    z-index: 2;
 }
 
 .card .card-header {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 15px 0 5px;
+    font-size: 1.5em;
+}
+
+.card .card-date {
+    font-weight: normal;
+    font-variant: small-caps;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 1em;
 }
 
 .card .card-description {
     text-align: justify;
+
+    transition: 1s;
+}
+
+.card .card-description:hover {
+    transform: scale(1.2);
+    z-index: 2;
+
+    background-color: #4c5b58;
+    border-radius: 5px;
+    color: white;
+
+    padding: 5px;
 }
 
 .card-ten {
+    /* box-shadow: 14px 14px 12px 0px rgb(95, 137, 87); */
+
     flex-direction: row;
     grid-column: span 2;
     align-items: center;
@@ -63,11 +107,11 @@
 .card .card-description span a:link {
     text-decoration: none;
     font-style: italic;
-    color: black;
+    color: rgb(185, 82, 82);
 }
 
 .card .card-description span a:visited {
-    color: black;
+    color: rgb(190, 105, 105);
 }
 
 .card .card-description span a:hover {
@@ -77,6 +121,20 @@
 .card-img-ten {
     height: 250px;
     width: 52%;
+}
+
+.more-card a:link {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+
+.more-card a:visited {
+    color: black;
+}
+
+.more-card a:hover {
+    color: red;
 }
 
 /* MEDIUM */
@@ -101,6 +159,9 @@
         overflow: hidden;
         max-width: 100%;
     }
+    .more-card {
+        grid-column: span 2;
+    }
 }
 
 /* SMALL */
@@ -109,10 +170,10 @@
     .blog-cards {
         grid-template-columns: 1fr;
     }
-}
-
-@media (max-width: 600px) {
     .blog-cards > .card {
+        grid-column: span 1;
+    }
+    .more-card {
         grid-column: span 1;
     }
 }
