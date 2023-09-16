@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 .blog-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,6 +53,10 @@
     text-align: center;
     margin: 15px 0 5px;
     font-size: 1.5em;
+    font-family: 'Poiret One';
+    border: 3px outset #4c5b58;
+    border-radius: 10%;
+    padding: 5px;
 }
 
 .card .card-header-link {
@@ -108,30 +114,47 @@
     text-align: justify;
 }
 
-.card-ten-content .card-description span {
+.card-ten-content .card-description .post-btn {
     float: right;
     text-decoration: none;
 }
 
-.card .card-description span a:link {
+.card .card-description .post-btn a {
     text-decoration: none;
     font-style: italic;
-    color: rgb(185, 82, 82);
+    color: #dbfff9;
+    font-family: 'Poiret One';
+    font-size: 1rem;
+    text-transform: capitalize;
 }
 
-.card .card-description span a:visited {
-    color: rgb(190, 105, 105);
+.card .card-description .post-btn {
+    background-color: #4c5b58;
+    border: none;
+    border-radius: 20px;
+    float: right;
+
+    padding: 2% 4%;
+    margin-top: 2%;
 }
 
-.card .card-description span a:hover {
-    color: red;
+.card .card-description .post-btn:hover {
+    background-color: #dbfff985;
 }
 
-.card .card-description:hover span a {
+.card .card-description .post-btn a:visited {
     color: #dbfff985;
 }
 
-.card .card-description:hover span a:hover {
+.card .card-description:hover .post-btn {
+    background-color: #dbfff985;
+}
+
+.card .card-description:hover .post-btn a {
+    color: white;
+}
+
+.card .card-description:hover .post-btn a:hover {
     color: black;
 }
 
@@ -151,7 +174,7 @@
 }
 
 .more-card a:hover {
-    color: red;
+    color: rgb(190, 105, 105);
 }
 
 /* MEDIUM */
@@ -167,7 +190,7 @@
     .card-ten-content {
         width: auto;
     }
-    .card-ten-content .card-description span {
+    .card-ten-content .card-description .post-btn {
         float: none;
     }
     .card-img-ten {

@@ -13,8 +13,8 @@
                 <h1><a href="../index.html">Jane's Daily</a></h1>
             </div>
             <div class="header-links">
-                <a href="#">link</a>
-                <a href="#">link</a>
+                <a href="#" class="nav-link-divide">Archive</a>
+                <a href="#" class="nav-link-divide">Contact</a>
                 <a href="#">link</a>
             </div>
         </div>
@@ -24,8 +24,19 @@
                     <h2 class="blog-title">Blog Post #5</h2>
                     <span class="blog-date">September 6, 2023</span>
                 </div>
+                <div class="post-links">
+                    <button class="post-btn previous-link">
+                        <a class="btn-link" href="./post.html">previous</a>
+                    </button>
+                    <button class="post-btn future-link">
+                        <a class="btn-link" href="./post.html">next</a>
+                    </button>
+                </div>
                 <div class="blog-content">
-                    <img class="content-img" src="../imgs/pexels-img5.jpg" alt="img from pexels.com">
+                    <figure>
+                        <img class="content-img" src="../imgs/pexels-img5.jpg" alt="photo of girl playing with sand on beach">
+                        <figcaption class="img-caption">young girl playing with sand on beach</figcaption>
+                    </figure>
                     <p class="content-intro">
                         Vitae et leo duis ut diam quam nulla. Sed adipiscing diam donec adipiscing tristique.
                         Risus quis varius quam quisque id diam vel. Nunc faucibus a pellentesque sit amet porttitor eget.
@@ -50,10 +61,14 @@
                         condimentum vitae sapien pellentesque habitant morbi tristique. Elit scelerisque mauris pellentesque pulvinar 
                         pellentesque.
                     </p>
-                    <p>
+                    <p class="img-p">
                         Non tellus orci ac auctor augue. Leo in vitae turpis faucibus. Elit ullamcorper dignissim cras tincidunt lobortis 
                         feugiat vivamus. Elit scelerisque mauris pellentesque pulvinar pellentesque. Vehicula ipsum a arcu cursus vitae 
-                        congue mauris rhoncus. Ac tincidunt vitae semper quis lectus nulla. At risus viverra adipiscing at in tellus. 
+                        congue mauris rhoncus. Ac tincidunt vitae semper quis lectus nulla. 
+                        
+                        <img src="../imgs/pexels-josh-sorenson-831890.jpg" alt="photo of glass sphere on beach" class="post-img">
+
+                        At risus viverra adipiscing at in tellus. 
                         Tincidunt augue interdum velit euismod in pellentesque. Id leo in vitae turpis faucibus. Cras ornare arcu dui vivamus. 
                         Amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh sit amet commodo nulla. 
                         Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Nisl pretium fusce id velit. Ornare arcu 
@@ -83,8 +98,17 @@
                 </div>
             </div>
             <div class="about-me">
-                <h3>About Me:</h3>
-                <h4 class="blog-author">Jane D. <span class="author-intro">Student Developer & Journalist</span></h4>
+                <div class="am-img-container">
+                    <img class="am-img" src="../imgs/pexels-abel-kayode-10850673.jpg" alt="picture of black woman with afro">
+                </div>
+                <div class="am-content">
+                    <h4 class="blog-author">Jane Doe <span class="author-intro">Student Researcher & Journalist</span></h4>
+                    <p class="am-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Velit dignissim sodales ut eu sem integer. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum.
+                        Porta nibh venenatis cras sed felis.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="bottom-container">

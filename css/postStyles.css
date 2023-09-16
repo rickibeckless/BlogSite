@@ -1,43 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
-p {
-    margin: 16px 0;
-    line-height: 165%;
-}
-
 .blog-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    /* border: 2px solid black; */
     margin: 0 10% 2% 10%;
     padding: 1% 2% 2%;
 }
 
 .blog-header {
-    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .blog-title {
-    font-size: 2rem;
-}
-
-.blog-author {
     font-family: 'Poiret One';
-    font-size: 1.4rem;
-    text-decoration: underline;
-    align-self: flex-end;
-}
-
-.author-intro {
-    font-weight: 100;
-    font-variant: small-caps;
-    font-style: italic;
-    font-size: 1.1rem;
+    font-size: 4rem;
 }
 
 .blog-date {
@@ -45,9 +25,42 @@ p {
     font-weight: 100;
     font-variant: small-caps;
     font-size: 1.2rem;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     border-left: 5px solid rgb(85, 97, 83);
     padding-left: 10px;
+}
+
+.post-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0 5% 2%;
+}
+
+.post-btn {
+    padding: 1.5% 4%;
+    border: none;
+    background-color: rgb(160 191 207);
+    border-radius: 25px;
+}
+
+.post-btn:hover {
+    background-color: #dce6ec;
+    transform: translateY(-2px);
+}
+
+.btn-link {
+    display: block;
+
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.post-btn:hover .btn-link{
+    color: rgb(160 191 207);
 }
 
 .blog-content {
@@ -79,7 +92,7 @@ p {
     height: 70vh;
 }
 
-.content-intro {
+.blog-content .content-intro {
     font-style: italic;
     padding: 0 10% 0 10%;
     margin-top: 60px;
@@ -88,14 +101,106 @@ p {
     font-size: .9rem;
 }
 
+.blog-content p {
+    margin: 14px 0;
+    line-height: 200%;
+    font-size: 1.2rem;
+}
+
+.blog-content figure {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-caption {
+    font-family: 'Poiret One';
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.post-img {
+    border-radius: 20px;
+
+    width: 25%;
+    height: 25%;
+    margin: 2% 2% 0 0;
+
+    float: left;
+
+    transition: 1s;
+}
+
+.post-img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+/* ABOUT ME */
+
 .about-me {
     background-color: rgb(150 180 178);
     color: #f4fffd;
-    margin: 0 10% 2% 10%;
-    padding: 1% 2% 2%;
+    margin: 0 8% 2% 8%;
+    padding: 2%;
     border: 2px inset #4c5b5847;
     border-radius: 20px;
     box-shadow: 7px 7px 12px 0px rgb(85, 97, 83);
+
+    display: flex;
+    align-items: center;
+
+    transition: 1s;
+}
+
+.about-me:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.am-img-container {
+    height: 100%;
+    width: 30%;
+}
+
+.am-img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 20px;
+}
+
+.am-content {
+    margin-left: 10%;
+    width: 60%;
+
+    transition: 1s;
+}
+
+.am-content:hover {
+    transform: scale(1.1);
+    z-index: 2;
+
+    background: #4c5b58;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+.blog-author {
+    font-family: 'Poiret One';
+    font-size: 1.4rem;
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+
+.author-intro {
+    font-weight: 100;
+    font-variant: small-caps;
+    font-style: italic;
+    font-size: 1.1rem;
 }
 
 @media (max-width: 1200px) {
@@ -106,7 +211,24 @@ p {
 
 @media (max-width: 800px) {
     .content-img {
-        height: 40vh; 
+        height: 40vh;
+    }
+
+    .blog-date {
+        margin-bottom: 4%;
+    }
+
+    .post-links {
+        justify-content: space-around;
+    }
+
+    .post-img {
+        display: block;
+        float: none;
+        margin: 4% auto;
+
+        width: 50%;
+        height: 50%;
     }
 }
 
@@ -114,8 +236,25 @@ p {
     .blog-card {
         margin: 2% 5%;
     }
+
     .content-img {
         width: 100%;
         height: 35vh;
+    }
+
+    .blog-date {
+        margin-bottom: 6%;
+    }
+
+    .post-links {
+        justify-content: center;
+    }
+
+    .previous-link {
+        margin-right: 6px;
+    }
+
+    .future-link {
+        margin-left: 6px;
     }
 }

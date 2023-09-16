@@ -20,10 +20,11 @@
     background-color: rgb(193 216 230);
 
     position: fixed;
+    z-index: 5;
 }
 
 .top-container a {
-    color: black;
+    color: #4c5b58;
     text-decoration: none;
 }
 
@@ -41,13 +42,24 @@
     margin-right: 2%;
 }
 
+.header-links a {
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+}
+
+.nav-link-divide {
+    border-right: 3px solid black;
+    padding-right: 8px;
+}
+
 .top-container a:hover {
-    color: red;
+    color: rgb(190, 105, 105);
 }
 
 .middle-container {
     background: radial-gradient(circle, rgba(236,214,223,1) 0%, rgba(185,216,231,1) 100%);
-    padding: 90px 0 20px 0;
+    padding: 105px 0 20px 0;
 }
 
 .bottom-container {
