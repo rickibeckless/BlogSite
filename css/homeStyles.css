@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 .blog-cards {
     display: grid;
@@ -78,6 +79,7 @@
     margin-bottom: 15px;
     font-style: italic;
     font-size: 1em;
+    text-align: center;
 }
 
 .card .card-description {
@@ -111,15 +113,9 @@
 
 .card-ten-content {
     width: 45%;
-    text-align: justify;
 }
 
-.card-ten-content .card-description .post-btn {
-    float: right;
-    text-decoration: none;
-}
-
-.card .card-description .post-btn a {
+.post-btn a {
     text-decoration: none;
     font-style: italic;
     color: #dbfff9;
@@ -128,21 +124,22 @@
     text-transform: capitalize;
 }
 
-.card .card-description .post-btn {
+.post-btn {
     background-color: #4c5b58;
     border: none;
     border-radius: 20px;
     float: right;
+    text-decoration: none;
 
     padding: 2% 4%;
     margin-top: 2%;
 }
 
-.card .card-description .post-btn:hover {
+.post-btn:hover {
     background-color: #dbfff985;
 }
 
-.card .card-description .post-btn a:visited {
+.post-btn a:visited {
     color: #dbfff985;
 }
 
@@ -163,18 +160,57 @@
     width: 52%;
 }
 
+.more-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.more-card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: rgb(190, 105, 105);
+}
+
+.more-img {
+    width: 32%;
+    height: 100%;
+    float: right;
+
+    border-radius: 50%;
+}
+
+.about {
+    text-align: justify;
+    margin: 4% 0;
+}
+
+.more-btns .post-btn:hover a {
+    color: black;
+}
+
+.more-btns {
+    display: flex;
+    justify-content: space-around;
+}
+
 .more-card a:link {
     text-decoration: none;
     font-style: italic;
-    color: black;
+    color: #dbfff9;
 }
 
 .more-card a:visited {
-    color: black;
+    color: #dbfff9;
 }
 
 .more-card a:hover {
-    color: rgb(190, 105, 105);
+    color: black;
 }
 
 /* MEDIUM */
@@ -189,9 +225,6 @@
     }
     .card-ten-content {
         width: auto;
-    }
-    .card-ten-content .card-description .post-btn {
-        float: none;
     }
     .card-img-ten {
         width: 300px;
