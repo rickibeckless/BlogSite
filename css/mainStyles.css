@@ -111,6 +111,7 @@
     .title a {
         font-size: 100%;
     }
+    
     .bottom-container {
         grid-template-columns: 1fr;
     }
