@@ -91,13 +91,21 @@
     height: 70vh;
 }
 
-.blog-content .content-intro {
+.c-intro .content-intro {
     font-style: italic;
     padding: 0 10% 0 10%;
     margin-top: 60px;
+    margin-bottom: 5px;
 
     line-height: 100%;
     font-size: .9rem;
+}
+
+.c-intro .intro-footer {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .blog-content p {
@@ -202,12 +210,32 @@
     font-size: 1.1rem;
 }
 
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.icon-links {
+    margin: 1%;
+}
+
+.fa-brands {
+    font-size: 3rem;
+    color: white;
+}
+
+/* RESPONSIVE */
+
+/* large */
 @media (max-width: 1200px) {
     .content-img {
         width: 80%;
     }
 }
 
+/* medium */
 @media (max-width: 800px) {
     .content-img {
         height: 40vh;
@@ -231,6 +259,7 @@
     }
 }
 
+/* small */
 @media (max-width: 500px) {
     .blog-card {
         margin: 2% 5%;

@@ -1,0 +1,51 @@
+/* BOTTOM CONTAINER */
+
+.bottom-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+    border-top: 5px solid rgb(160 191 207);
+    background-color: rgb(193 216 230);
+
+    padding: 20px;
+}
+
+.b-right, .b-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 100%;    
+}
+
+.about-blog p {
+    width: 100%;
+    font-style: italic;
+    text-align: justify;
+}
+
+.sources {
+    text-align: right;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 45%;
+}
+
+.social {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+.social .fa-brands {
+    font-size: 2.5rem;
+    color: white;
+}

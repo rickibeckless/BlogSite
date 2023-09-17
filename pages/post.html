@@ -10,6 +10,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicons/favicon-16x16.png">
         <link rel="manifest" href="../imgs/favicons/site.webmanifest">
+        <script src="https://kit.fontawesome.com/6fdb255b28.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="top-container">
@@ -40,11 +41,14 @@
                         <img class="content-img" src="../imgs/pexels-img5.jpg" alt="photo of girl playing with sand on beach">
                         <figcaption class="img-caption">young girl playing with sand on beach</figcaption>
                     </figure>
-                    <p class="content-intro">
-                        Vitae et leo duis ut diam quam nulla. Sed adipiscing diam donec adipiscing tristique.
-                        Risus quis varius quam quisque id diam vel. Nunc faucibus a pellentesque sit amet porttitor eget.
-                        Iaculis urna id volutpat lacus laoreet non. Dictumst vestibulum rhoncus est pellentesque elit.
-                    </p>
+                    <blockquote cite="https://loremipsum.io/generator/" class="c-intro">
+                        <p class="content-intro">
+                            Vitae et leo duis ut diam quam nulla. Sed adipiscing diam donec adipiscing tristique.
+                            Risus quis varius quam quisque id diam vel. Nunc faucibus a pellentesque sit amet porttitor eget.
+                            Iaculis urna id volutpat lacus laoreet non. Dictumst vestibulum rhoncus est pellentesque elit.
+                        </p>
+                        <footer class="content-intro intro-footer">Random Text, <strong><cite>Lorem ipsum</cite></strong></footer>
+                    </blockquote>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
                         magna aliqua. Pellentesque eu tincidunt tortor aliquam. Ornare arcu dui vivamus arcu. Accumsan sit amet nulla 
@@ -53,7 +57,7 @@
                         fusce ut placerat orci nulla pellentesque. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt.
                     </p>
                     <p>
-                        Proin nibh nisl condimentum id venenatis a condimentum vitae. Neque convallis a cras semper auctor neque vitae.
+                        <u>Proin nibh nisl condimentum id venenatis a condimentum vitae. Neque convallis a cras semper auctor neque vitae.</u>
                         Dui ut ornare lectus sit amet est placerat. Faucibus et molestie ac feugiat sed lectus vestibulum mattis.
                         Faucibus pulvinar elementum integer enim neque volutpat. Laoreet id donec ultrices tincidunt arcu non sodales.
                         Velit egestas dui id ornare arcu odio. Nunc eget lorem dolor sed viverra ipsum nunc. Dui nunc mattis enim ut 
@@ -89,14 +93,14 @@
                         Amet mauris commodo quis imperdiet faucibus.
                     </p>
                     <p>
-                        Commodo quis imperdiet faucibus tincidunt nunc pulvinar sapien. Blandit cursus risus at ultrices mi tempus imperdiet. 
+                        <strong>Commodo quis imperdiet faucibus tincidunt nunc pulvinar sapien. Blandit cursus risus at ultrices mi tempus imperdiet.</strong> 
                         Id diam maecenas ultricies mi. Nec feugiat nisl pretium fusce id. Adipiscing at in tellus integer feugiat. 
                         Non tellus orci ac auctor augue mauris augue neque gravida. Pellentesque faucibus placerat duis ultricies lacus 
                         sed turpis. Dictum at tempor commodo ullamcorper a lacus. Quis viverra nibh cras pulvinar mattis nunc sed. 
                         Nisl vel pretium lectus quam id leo in vitae turpis. Enim praesent elementum facilisis leo vel fringilla est 
                         ullamcorper eget. Tincidunt id aliquet risus feugiat. Scelerisque in dictum non consectetur a erat nam. Dictum 
                         at tempor commodo ullamcorper a lacus vestibulum sed arcu. Vehicula ipsum a arcu cursus vitae congue mauris. 
-                        Sed cras ornare arcu dui vivamus arcu felis bibendum.
+                        <em>Sed cras ornare arcu dui vivamus arcu felis bibendum!</em>
                     </p>
                 </div>
             </div>
@@ -104,20 +108,30 @@
                 <div class="am-img-container">
                     <img class="am-img" src="../imgs/pexels-abel-kayode-10850673.jpg" alt="picture of black woman with afro">
                 </div>
-                <div class="am-content">
+                <div class="am-content" id="contact-am">
                     <h4 class="blog-author">Jane Doe <span class="author-intro">Student Researcher & Journalist</span></h4>
                     <p class="am-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Velit dignissim sodales ut eu sem integer. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum.
                         Porta nibh venenatis cras sed felis.
                     </p>
+                    <div class="icons">
+                        <a href="https://www.facebook.com" class="icon-links">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com" class="icon-links">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="icon-links">
+                            <i class="fa-brands fa-linkedin"></i>    
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="bottom-container">
             <div class="b-right">
                 <div class="about-blog">
-                    <a href="https://github.com/rickibeckless" class="social github-link">Github</a>
                     <p>
                         Created as a project of Udacity's Frontend Web Development Fundamentals Nanodegree program, 
                         this website serves as a showcase of my progression of skills in web development. The primary goal of this 
@@ -129,7 +143,12 @@
             </div>
             <div class="b-left">
                 <a href="./sources.html" class="sources">Credits</a>
-                <p class="copyright">&copy; 2023 Ricki Beckless</p>
+                <p class="copyright">
+                    &copy; 2023 Ricki Beckless
+                    <a href="https://github.com/rickibeckless" class="social github-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </p>
             </div>
         </div>
     </body>
