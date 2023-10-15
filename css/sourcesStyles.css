@@ -1,9 +1,6 @@
 .middle-container {
     padding: 97px 0 20px 0;
-    height: 100vh;
 }
-
-/* ^i want to figure out a way to fix the clipping and merging of the body and middle container on smaller screens*/
 
 .credit-holder {
     display: grid;
